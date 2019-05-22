@@ -41,7 +41,7 @@ export default class LoginScreen extends React.Component {
                     <Text style={styles.description}>Your bookmark image app</Text>
                 </View>
                 <View style={styles.singInContainer}>
-                    <TextInput style={styles.username} placeholder='Username' textContentType='username' autoFocus />
+                    <TextInput style={styles.username} placeholder='Username' textContentType='username' autoCapitalize='none' autoFocus />
                     <View style={styles.lineSeparator} />
                     <TextInput style={styles.password} placeholder='Password' textContentType='password' secureTextEntry />
                     <View style={styles.lineSeparator} />
