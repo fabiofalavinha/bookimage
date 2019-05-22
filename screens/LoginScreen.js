@@ -6,6 +6,7 @@ import {
     TouchableOpacity,
     ActivityIndicator,
     View,
+    Button,
   } from 'react-native';
 
 export default class LoginScreen extends React.Component {
@@ -50,9 +51,7 @@ export default class LoginScreen extends React.Component {
                     </TouchableOpacity>
                 </View>
                 <View style={styles.signUpContainer}>
-                    <TouchableOpacity onPress={this.openSignUpScreen}>
-                        <Text style={styles.button}>New user? Sign up</Text>
-                    </TouchableOpacity>
+                    <Button title='New user? Sign up' onPress={this.openSignUpScreen} />
                 </View>
                 <View style={styles.version}>
                     <Text>v{this.state.version}</Text>

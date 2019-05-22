@@ -27,7 +27,7 @@ const formStyles = {
     },
     controlLabel: {
       normal: {
-        color: 'blue',
+        color: 'black',
         fontSize: 18,
         marginBottom: 7,
         fontWeight: '600'
@@ -93,10 +93,9 @@ export default class UserSignUpScreen extends React.Component {
               password: value.password
             }),
         })
-        .then((response) => response.json())
-        .then((responseJson) => {
+        .then((response) => {
             this.setState({ isLoading: false });
-            this.navigate('Main');
+            this.props.navigation.navigate('Main');
         })
         .catch((error) =>{
             console.log('Error sign up user: ' + error);
