@@ -123,7 +123,6 @@ export default class UserSignUpScreen extends React.Component {
 
         return (
             <View style={styles.container}>
-                <Text style={styles.title}>New User</Text>
                 <Form 
                     ref={c => this._form = c}
                     type={User} 

@@ -41,8 +41,6 @@ export default class LoginScreen extends React.Component {
                     <Text style={styles.description}>Your bookmark image app</Text>
                 </View>
                 <View style={styles.singInContainer}>
-                    <Text style={styles.title}>Sign in</Text>
-                    <View style={styles.lineSeparator} />
                     <TextInput style={styles.username} placeholder='Username' textContentType='username' autoFocus />
                     <View style={styles.lineSeparator} />
                     <TextInput style={styles.password} placeholder='Password' textContentType='password' secureTextEntry />
@@ -51,12 +49,9 @@ export default class LoginScreen extends React.Component {
                         <Text style={styles.button}>Log in</Text>
                     </TouchableOpacity>
                 </View>
-                <View style={styles.separator} />
                 <View style={styles.signUpContainer}>
-                    <Text style={styles.title}>New user?</Text>
-                    <View style={styles.lineSeparator} />
                     <TouchableOpacity onPress={this.openSignUpScreen}>
-                        <Text style={styles.button}>Sign up</Text>
+                        <Text style={styles.button}>New user? Sign up</Text>
                     </TouchableOpacity>
                 </View>
                 <View style={styles.version}>
@@ -70,7 +65,7 @@ export default class LoginScreen extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: '#DEE2EC',
     },
     titleContainer: {
         padding: 20,
@@ -88,7 +83,6 @@ const styles = StyleSheet.create({
     },
     singInContainer: {
         justifyContent: 'center',
-        backgroundColor: '#fff',
         padding: 20,
     },
     separator: {
@@ -97,7 +91,6 @@ const styles = StyleSheet.create({
     },
     signUpContainer: {
         justifyContent: 'center',
-        backgroundColor: '#fff',
         padding: 20,
         alignContent: 'center',
     },

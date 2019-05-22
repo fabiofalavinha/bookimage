@@ -5,7 +5,12 @@ import HomeScreen from '../screens/HomeScreen';
 import UserSignUpScreen from '../screens/UserSignUpScreen';
 
 const MainNavigator = createStackNavigator({
-  Main: LoginScreen,
+  Main: { 
+    screen: LoginScreen, 
+    navigationOptions: {
+      header: null,
+    }
+  },
   Home: { screen: HomeScreen },
   SignUp: { screen : UserSignUpScreen }
 });
