@@ -97,7 +97,7 @@ export default class UserSignUpScreen extends React.Component {
             this.setState({ isLoading: false });
             this.props.navigation.navigate('Main');
         })
-        .catch((error) =>{
+        .catch((error) => {
             console.log('Error sign up user: ' + error);
             this.setState({ isLoading: false });
 
